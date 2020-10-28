@@ -1,0 +1,107 @@
+body {
+    background-color: #000000;
+    text-align: center;
+}
+
+h1 {
+    color: #ac4b1c;
+    font-size: 4rem;
+    font-family: 'Grenze Gotisch', cursive;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.turn {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.game {
+    background-color: #16697a;
+    display: inline-block;
+}
+
+#column-top td{
+    position: relative;
+}
+
+h3 {
+    color: white;
+}
+
+.top-cells {
+    width: 45px;
+    height: 45px;
+    border: 1px dashed;
+    background-color: white;
+}
+
+.cells {
+    width: 45px;
+    height: 45px;
+    border: 1px solid;
+}
+
+
+
+.reset {
+    margin-top: 40px;
+    border: solid;
+    width: 80px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.reset:hover {
+    color: grey;
+}
+
+.circle{
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.circle-red{
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+    background-color: red;
+    border-radius: 100%;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    
+}
+
+.circle-blue{
+    margin: 5px;
+    width: 80%;
+    height: 80%;
+    background-color: blue;
+    border-radius: 100%;
+    animation-duration: 0.5s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+#top-column td:hover {
+    background-color: #ac4b1c;
+}
+
+
+@keyframes slidein {
+    from {
+        margin-top: -500%;
+    }
+    to {
+        margin-bottom: 0%;
+    }
+}
+
+
